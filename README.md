@@ -179,7 +179,7 @@
 <body>
 
   <header>
-    <img src="c:\Users\Lauti\Pictures\petiso\Imagen de WhatsApp 2025-11-16 a las 19.39.39_dee9029e.jpg" alt="LOGO MOTOTEC">
+    <img src="petiso/LOGO.jpg" alt="LOGO MOTOTEC">
     <nav>
       <a href="#inicio">Inicio</a>
       <a href="#productos">Productos</a>
