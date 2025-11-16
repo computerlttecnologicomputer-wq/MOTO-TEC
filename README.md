@@ -1,1 +1,262 @@
-# MOTO-TEC
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOTOTEC - Tienda de Auriculares</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20;
+      background: #5e5e5e;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(136, 136, 136, 0.1);
+    }
+    header {
+      background: #ffffff;
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(136, 136, 136, 0.1);
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      
+   }
+    header img {
+      height: 50px;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+    nav a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    .telefono {
+      font-size: 14px;
+      margin-left: 20px;
+      color: #000000;
+      font-weight: bold;
+    }
+    .hero {
+      text-align:left;
+      padding: 20px 20px;
+      background: linear-gradient(to right, #f5f5f5, #383737);
+      color: rgb(0, 0, 0);
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(136, 136, 136, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin: 10px 0;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+    .precio {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0;
+      color: #000000;
+    }
+    .btn {
+      display: inline-block;
+      background: #000000;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #000000;
+    }
+    .opiniones {
+      background: #eee;
+      padding: 40px;
+      text-align: center;
+    }
+    .opiniones h2 {
+      margin-bottom: 20px;
+    }
+    .opiniones p {
+      font-style: italic;
+      color: #333;
+    }
+    .contacto {
+      padding: 40px;
+      text-align: center;
+    }
+    .contacto form {
+      max-width: 500px;
+      margin: auto;
+    }
+    .contacto input, .contacto textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #ffffff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    footer .telefono {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #00bfff;
+    }
+
+   /* BOTÓN WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+    .whatsapp-float:hover {
+      background-color: #20b955;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="c:\Users\Lauti\Pictures\petiso\Imagen de WhatsApp 2025-11-16 a las 19.39.39_dee9029e.jpg" alt="LOGO MOTOTEC">
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+      <span class="telefono">+54 381 563 1538</span>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2>Los mejores AURICULARES al mejor precio</h2>
+    <p>MOTOTEC</p>
+  </section>
+
+  <section class="productos" id="productos">
+    <div class="card">
+      <img src="petiso/SONY.jpg" alt= "NFT 1">
+      <h3>AURICULARES SONY</h3>
+      <div class="precio">$26.700</div>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+    <div class="card">
+      <img src="petiso/DINAX2.jpg" alt="AURICULARES XIAOMI">
+      <h3>AURICULARES XIAOMI</h3>
+      <div class="precio">$79.999</div>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+    <div class="card">
+      <img src="petiso/JBL.jpg" alt="AURICULARES SONY">
+      <h3>AURICULARES JBL</h3>
+      <div class="precio">$59.999</div>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+    <div class="card">
+      <img src="petiso/KZ CASTOR.jpg" alt= "KZ CASTOR">
+      <h3>AURICULARES KZ CASTOR</h3>
+      <div class="precio">$81.700</div>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+    <div class="card">
+      <img src="petiso/DINAX.jpg" alt= "DINAX">
+      <h3>AURICULARES DINAX</h3>
+      <div class="precio">$11.300</div>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+    <div class="card">
+      <img src="petiso/DINAX1.jpg" alt= "DINAX">
+      <h3>AURICULARES DINAX</h3>
+      <div class="precio">$11.300</div>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+  </section>
+  <section class="contacto" id="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea rows="5" placeholder="Tu mensaje"></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AURICULARES - Todos los derechos reservados</p>
+    <p>Síguenos en:
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a>
+    </p>
+    <span class="telefono">📞 +54 381 563 1538</span>
+  </footer>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a href="https://wa.me/543812160221" class="whatsapp-float" target="_blank">
+    💬
+  </a>
+
+</body>
+</html>
+
